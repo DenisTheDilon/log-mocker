@@ -1,6 +1,8 @@
-# LOG-MOCKER
+# LOG-MOCKER-DOCKER-IMAGE
 
 Periodically emits a log message in stdout, with random message and length.
+
+Use with `docker pull thedilon/log-mocker` 
 
 __Log format:__
 
@@ -10,6 +12,6 @@ __Log format:__
 
 __Env variables:__
 
-* cronTime - default is '* * * * *'
-* minLogSize - default is 1000
-* maxLogSize - default is 20000
+* CRON - default is '* * * * *'
+* MIN_MESSAGE_SIZE - default is 1000
+* MAX_MESSAGE_SIZE - default is 20000
